@@ -1,0 +1,463 @@
+@font-face {
+    font-family: "biko-regular";
+    src: url(../font/Biko_Regular.otf);
+}
+@font-face {
+    font-family: "biko-bold";
+    src: url(../font/Biko_Bold.otf);
+}
+@font-face {
+    font-family: "biko-black";
+    src: url(../font/Biko_Black.otf);
+}
+*{
+    font-family: "biko-regular";
+    color: #2b2929;
+}
+.register-main{
+    background-image: url(../img/register-bg.png);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+.register-logo{
+    width: 54%;
+    max-width: 574px;
+    position: relative;
+    z-index: 1;
+}
+.register-form form{
+    background: rgba(200, 180, 146, 0.9);
+    box-shadow: 2px -5px 41px rgba(255, 240, 188, 0.5);
+    backdrop-filter: blur(2.5px);
+    border-radius: 90px;
+    padding: 46px 85px;
+    border: 6px solid #967E2C;
+}
+.register-form h4{
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 30px;
+    font-family: "biko-bold";
+    text-align: center;
+    margin-bottom: 16px;
+}
+.custom-input{
+    width: 100%;
+    padding: 15px 25px;
+    border-radius: 25rem;
+    background: #EDD196;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #334518;
+    outline: none;
+    border: none;
+}
+.custom-input::placeholder{
+    color: #334518;
+}
+.custom-input:-moz-placeholder{
+    color: #334518;
+}
+.custom-input::-moz-placeholder{
+    color: #334518;
+}
+.custom-input:-ms-input-placeholder{
+    color: #334518;
+}
+.custom-input::-webkit-input-placeholder{
+    color: #334518;
+}
+.submit-btn{
+    background: linear-gradient(90deg, #7B5926 0%, #C5B066 37.6%, #967E2C 65.1%, #684610 89.06%);
+    width: 100%;
+    padding: 10px;
+    color: white;
+    font-family: "biko-bold";
+    font-size: 20px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 25rem;
+    border: none;
+}
+.register-form small{
+    color: #334518;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+.invited-section{
+    position: relative;
+    margin-top: -85px;
+    padding: 80px 40px;
+    padding-bottom: 30px;
+}
+.invited-section>*{
+    position: relative;
+    z-index: 1;
+    color: #334518;
+    line-height: 1.1;
+}
+.invited-section::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, #F1E6B2 99.79%, rgba(241, 230, 178, 0) 8%);
+    filter: blur(44.5px);
+    z-index: 0;
+}
+.invited-section h2{
+    text-shadow: -2px 4px 5px rgba(0, 0, 0, 0.5);
+    font-size: 48px;
+    font-family: "biko-black";
+    margin-bottom: 28px;
+}
+.invited-section h3{
+    font-family: "biko-black";
+    font-size: 32px;
+}
+.invited-section p{
+    font-size: 30px;
+    font-family: "biko-bold";
+}
+.invited-section strong{
+    font-size: 30px;
+    font-family: "biko-black";
+}
+.popup-btn{
+    background: linear-gradient(180deg, #ECDECA 0%, #EFC6B4 49.06%, #E2AC8A 100%);
+    border-radius: 25rem;
+    display: none;
+    font-size: 40px;
+    text-shadow: 3px 2px 6px rgba(0, 0, 0, 0.3);
+    padding: 15px 40px;
+    color: #5A4B17;
+    font-family: "biko-bold";
+    border: 5px solid #967E2C;
+}
+.thanku-popup{
+    background-color: #334518;
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: -200%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: auto;
+    z-index: 9;
+    width: 95%;
+    max-width: 636px;
+    transition: all .5s;
+}
+.thanku-popup h2{
+    font-size: 35px;
+    color: #fff;
+    font-family: "biko-bold";
+    text-align: center;
+}
+.thanku-popup p{
+    color: #fff;
+    font-size: 25px;
+    /* width: 50%; */
+    text-align: center;
+    line-height: 1.1;
+    margin-top: 26px;
+}
+.close-btn{
+    all: unset;
+    text-decoration: underline;
+    font-size: 25px;
+    cursor: pointer;
+    color: #fff;
+}
+.select2-container .select2-selection--single{
+    padding: 0;
+    background: transparent;
+    border: none;
+    height: auto;
+}
+.select2-selection__rendered{
+    height: auto;
+    border-radius: 25rem;
+    background: #EDD196;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #334518;
+    outline: none;
+    border: none;
+    padding: 15px 25px !important;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow{
+    height: 29px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    width: 29px;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow b{
+    border: none;
+    background-image: url(../img/arrow.svg);
+    height:29px;
+    width:29px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-left: 0px;
+    transform: translate(0px);
+    position: static;
+    display: block;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered{
+    color: #334518;
+}
+.select2-results__options{
+    background-color: #334518;
+    color: white;
+    border-radius: 0px 0px 17px 17px;
+    scrollbar-width: thin;
+    scrollbar-color: #FFFFFF rgba(255, 255, 255, 0.25);
+}
+.select2-results__options::-webkit-scrollbar{
+    width: 8px;
+    border-radius: 25rem;
+}
+.select2-results__options::-webkit-scrollbar-track{
+    width: 8px;
+    background-color: rgba(255, 255, 255, 0.25);
+    border-radius: 25rem;
+}
+.select2-results__options::-webkit-scrollbar-thumb{
+    width: 8px;
+    border-radius: 25rem;
+    background-color: #FFFFFF;
+}
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable{
+    background-color: #334518;
+}
+.select2-container--default .select2-results__option--selected{
+    background-color: #334518;
+}
+.select2-dropdown.select2-dropdown--below{
+    transform: scalex(.9);
+    border: none;
+    background: transparent;
+}
+.select2-results{
+    background-color: #334518;
+    border-radius: 0px 0px 17px 17px;
+    padding: 15px 5px;
+}
+.select2-results__option{
+    color:white;
+    padding: 20px 0px;
+    text-align: center;
+    border-bottom: 1px solid white;
+}
+.select2-results__option:first-child{
+    display: none;
+}
+.select2-results__option:nth-child(2){
+    padding-top: 5px;
+}
+.custom-error{
+    line-height: 1.1;
+    display: block !important;
+    text-align: left !important;
+}
+.overlay{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(24px);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .3s;
+    z-index: 5;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+   -webkit-appearance: none;
+   margin: 0;
+}
+
+input[type="number"] {
+   -moz-appearance: textfield;
+}
+@media(max-width:1200px){
+    .register-main{
+        background-image: url(../img/register-bg-mobile.png);
+    }
+    .register-form{
+        position: fixed;
+        top: -2000px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 9;
+        margin-top: 0px !important;
+        background-image: url(../img/register-popup-bg.png);
+        background-size: cover;
+        background-position: center;
+        min-height: 95vh;
+        padding-top: 100px;
+        width: 95%;
+        border-radius: 25px;
+        transition: all .3s;
+    }
+    .register-form form{
+        padding: 36px 75px;
+        margin: auto;
+        width: 88%;
+    }
+    .popup-btn{
+        display: inline-block;
+    }
+    .invited-section{
+        padding-bottom: 80px;
+    }
+    .invited-section::before{
+        background: linear-gradient(180deg, rgba(239, 198, 180, 0.5) 0%, #EFC6B4 17.29%, #EFC6B4 95.29%, rgba(239, 198, 180, 0) 99.77%);
+    }
+    .thanku-popup{
+        background-image: url(../img/register-popup-bg.png);
+        height: 95vh;
+    }
+    .thanku-popup h2{
+        font-size: 38px;
+        color: #684610;
+    }
+    .thanku-popup p{
+        font-size: 28px;
+        color: #684610;
+    }
+    .close-btn{
+        font-size: 28px;
+        color: #684610;
+    }
+}
+@media(max-width:992px){
+    .invited-section h2{
+        font-size: 40px;
+    }
+    .invited-section h3{
+        font-size: 26px;
+    }
+    .invited-section p{
+        font-size: 22px;
+    }
+    .invited-section strong{
+        font-size: 22px;
+    }
+    .popup-btn{
+        font-size: 22px;
+    }
+    .register-form form{
+        padding: 26px 43px;
+        border-radius: 70px;
+        border-width: 3px;
+    }
+    .register-form h4{
+        font-size: 22px;
+    }
+    .custom-input{
+        font-size: 12px;
+        padding: 10px 20px;
+    }
+    .select2-selection__rendered{
+        font-size: 12px;
+        padding: 10px 20px !important;
+    }
+    .select2-container--default .select2-selection--single .select2-selection__rendered{
+        line-height: 1.5;
+    }
+    .select2-results__option{
+        padding: 10px 0px;
+        font-size: 12px;
+    }
+    .register-form small{
+        font-size: 10px;
+    }
+    .submit-btn{
+        font-size: 18px;
+        padding: 6px;
+    }
+    .thanku-popup h2{
+        font-size: 38px;
+    }
+    .thanku-popup p{
+        font-size: 28px;
+    }
+    .close-btn{
+        font-size: 28px;
+    }
+}
+@media(max-width:576px){
+    .invited-section h2{
+        font-size: 30px;
+    }
+    .invited-section h3{
+        font-size: 18px;
+    }
+    .invited-section p{
+        font-size: 14px;
+    }
+    .invited-section strong{
+        font-size: 14px;
+    }
+    .popup-btn{
+        font-size: 14px;
+        padding: 10px 20px;
+        border-width: 3px;
+    }
+    .invited-section{
+        padding: 60px 20px;
+        margin-top: -60px;
+    }
+    .register-form form{
+        padding: 23px;
+        border-radius: 50px;
+    }
+    .register-form h4{
+        font-size: 22px;
+    }
+    .custom-input{
+        font-size: 10px;
+    }
+    .select2-selection__rendered{
+        font-size: 10px;
+        padding: 10px 20px !important;
+    }
+    .select2-results__option{
+        padding: 10px 0px;
+        font-size: 10px;
+    }
+    .register-form small{
+        font-size: 8px;
+    }
+    .submit-btn{
+        font-size: 14px;
+        padding: 6px;
+    }
+    .thanku-popup h2{
+        font-size: 28px;
+    }
+    .thanku-popup p{
+        font-size: 18px;
+        width: 70%;
+    }
+    .close-btn{
+        font-size: 18px;
+    }
+}
